@@ -17,7 +17,7 @@ const ProductRow = () => {
 
 
     useEffect(() => {
-        fetch("http://localhost:4000/api/getproducts", {
+        fetch("https://lc-server.onrender.com/getproducts", {
             method: "GET",
             headers: { "Content-Type": "application/json" },
             credentials: "include"  
@@ -143,7 +143,7 @@ const ProductRow = () => {
 
      
         //console.log(token);
-        fetch("http://localhost:4000/api/order", {
+        fetch("https://lc-server.onrender.com/api/order", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             credentials: "include",
@@ -288,7 +288,7 @@ const ProductRow = () => {
                             <tr key={obj.id}>
                                 <td>
                                     <img
-                                        src={`http://localhost:4000/public/` + obj.filename}
+                                        src={`https://lc-server.onrender.com/public/` + obj.filename}
                                         alt={obj.name}
                                         style={{ float: "left", padding: "0 .5rem" }}
                                     />

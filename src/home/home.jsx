@@ -9,7 +9,7 @@ const Home = ()=> {
     const [fetchedData, setFetchedData] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:4000/api/order", {
+        fetch("https://lc-server.onrender.com/api/order", {
             method: "GET",
             headers: { "Content-Type": "application/json" },
             credentials: "include"  

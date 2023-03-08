@@ -23,7 +23,6 @@ const PastOrders = ({ data }) => {
     <>
       <table
         id="order-table"
-        // className={`fontSize ${summaryOn1 ? "blur" : ""}`}
       >
         <thead>
           <tr>

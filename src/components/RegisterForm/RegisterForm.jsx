@@ -140,7 +140,7 @@ const navigate = useNavigate();
 
 async function registerfunction(e) {
   e.preventDefault();
-  const response = await fetch('http://localhost:4000/api/register', {
+  const response = await fetch('https://lc-server.onrender.com/api/register', {
     method: 'POST',
     body: JSON.stringify({name, email, mobile, state, district, address, pincode, password}),
     headers: { 'Content-Type':'application/json' }

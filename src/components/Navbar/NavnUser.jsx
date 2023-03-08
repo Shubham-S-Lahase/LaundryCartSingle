@@ -7,7 +7,7 @@ const NavnUser = () => {
   const {userInfo, setUserInfo} = useContext(UserContext);
   const {redirect, setRedirect} = useState(false);
   useEffect(() => {
-    fetch("http://localhost:4000/api/profile", {
+    fetch("https://lc-server.onrender.com/api/profile", {
       credentials: "include",
     }).then((response) => {
       response.json().then((userInfo) => {
@@ -18,7 +18,7 @@ const NavnUser = () => {
   }, [])
 
   function logout(){
-    fetch('http://localhost:4000/api/logout',{
+    fetch('https://lc-server.onrender.com/api/logout',{
       credentials: "include",
       method: 'POST'
     });
